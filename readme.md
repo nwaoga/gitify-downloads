@@ -2,6 +2,22 @@
 
 This repository contains the packaged Gitify installers. The application source code is kept in a separate private repository.
 
+## See Gitify in action
+
+Gitify gives you a visual workspace for repositories, branches, commits, and connected hosting accounts.
+
+### History
+
+![Gitify history view](screenshots/gitify-history.png)
+
+### Repository management
+
+![Gitify repository management](screenshots/gitify-repository-management.png)
+
+### Branch river
+
+![Gitify branch river](screenshots/gitify-river.png)
+
 ## Download Gitify
 
 Open the [Releases page](https://github.com/nwaoga/gitify-downloads/releases) and choose the newest release. Prereleases are marked clearly; use one only if you want the latest testing build.
