@@ -47,6 +47,38 @@ Use the `.deb` package on Debian, Ubuntu, or another Debian-based distribution. 
 
 You normally do not need to download files ending in `.blockmap` or `latest*.yml`. They are used by Gitify’s automatic update system. The `Source code` archives are repository metadata, not application installers.
 
+## First open / Gatekeeper & SmartScreen
+
+This public build is unsigned. macOS and Windows may warn you the first time you open Gitify. The app is not damaged; the warning is because the build has no Apple or Microsoft signature.
+
+### macOS
+
+Gatekeeper may say Gitify is from an unidentified developer, or that it is damaged and should be moved to the Trash.
+
+After you copy the app into the Applications folder, open Terminal and run:
+
+```bash
+xattr -cr /Applications/Gitify.app
+```
+
+If Gitify is not in Applications, use its actual path instead of `/Applications/Gitify.app`.
+
+A lesser alternative is to right-click `Gitify.app` and choose **Open**, then confirm that you want to open it.
+
+### Windows
+
+If SmartScreen blocks the installer, choose **More info**, then **Run anyway**.
+
+### If it still will not open
+
+[Open an issue](https://github.com/nwaoga/gitify-downloads/issues) and include:
+
+- your operating system and CPU architecture;
+- the Gitify version; and
+- a screenshot or log of the warning.
+
+Do not include access tokens, private repository URLs, or other secrets.
+
 ## Help
 
 For download or installation problems, [open an issue](https://github.com/nwaoga/gitify-downloads/issues) and include:
